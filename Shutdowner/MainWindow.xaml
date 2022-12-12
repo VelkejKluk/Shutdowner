@@ -1,0 +1,21 @@
+﻿<Window x:Class="Shutdowner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Shutdowner"
+        mc:Ignorable="d"
+        Title="Shutdowner" MaxHeight="420" MaxWidth="520" Background="Black" ResizeMode="CanMinimize">
+    <Grid Margin="0,0,0,-6" HorizontalAlignment="Center" Width="683">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Start" Content="Start" HorizontalAlignment="Center" Margin="0,305,0,0" VerticalAlignment="Top" Height="35" Width="472" Click="Button_Click" Background="DarkRed" Foreground="White" FontWeight="Bold"/>
+        <Button x:Name="Přerušit" Content="Přerušit" HorizontalAlignment="Center" Margin="0,349,0,0" VerticalAlignment="Top" Width="472" Height="19" Background="Black" BorderBrush="DarkRed" Foreground="white" FontWeight="Bold" Click="Button_Click_1"/>
+        <TextBox x:Name="Minuty" HorizontalAlignment="Center" Margin="0,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="492" Height="25"/>
+        <TextBox x:Name="Sekundy" HorizontalAlignment="Center" Margin="0,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="492" Height="25"/>
+        <Image Margin="270,24,271,227" Source="/pp,840x830-pad,1000x1000,f8f8f8.jpg" Stretch="Fill" MaxHeight="200" MaxWidth="200"/>
+        <Label Content="Minuty:" HorizontalAlignment="Left" Height="24" Margin="96,0,0,0" VerticalAlignment="Center" Width="56" Foreground="White"/>
+        <Label Content="Sekundy:" HorizontalAlignment="Left" Margin="96,246,0,0" VerticalAlignment="Top" Width="62" Height="27" Foreground="White"/>
+    </Grid>
+</Window>
